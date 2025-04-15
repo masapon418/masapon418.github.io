@@ -1,0 +1,178 @@
+/* ---------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px; /* html要素の基本フォントサイズを大きく */
+}
+
+body {
+    line-height: 28px; /* 行間も少し広げる */
+    font-size: 1.0em; /* body要素のフォントサイズをhtmlの基準を元に調整 */
+    font-family: "Lato", "Noto Sans JP", Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
+}
+
+.smalltext {
+    font-size: 0.9em; /* smalltextは少し小さめにする */
+}
+
+
+/* ----------- card ----------------------- */
+
+.card-img,
+.card-img-top {
+    max-height: 220px; /* カード内の画像もバランスを見て少し大きく */
+    object-fit: scale-down;
+    padding: 28px;
+}
+
+
+/* ----------- badge ----------------------- */
+
+.badge-cstm {
+    padding: 6px 12px;
+    height: 40px; /* バッジの高さも少し大きく */
+    display: inline;
+    margin: 6px;
+    font-size: 1.0em; /* バッジ内の文字サイズも少し大きく */
+}
+
+.subbadge-cstm {
+    margin-left: 12px;
+    display: inline;
+    font-weight: 100;
+    border-radius: 0.1rem;
+    padding: 0.15em 0.7em;
+    font-size: 0.9em; /* サブバッジは少し小さめ */
+}
+
+
+/* ----------- h ----------------------- */
+
+h2 {
+    border-bottom: 3px solid #333; /* 下線も少し太く */
+    color: #333;
+    font-size: 20px; /* h2要素のフォントサイズを大きく */
+    margin: 35px auto;
+    padding: 12px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+h3 {
+    border-bottom: 3px dashed #333; /* 下線も少し太く */
+    color: #333;
+    font-size: 16px; /* h3要素のフォントサイズを大きく */
+    margin: 35px auto;
+    padding: 12px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+
+/* ----------- nav ----------------------- */
+
+.navbar a.nav-link {
+    font-size: 1.1em; /* ナビゲーションリンクの文字サイズを大きく */
+}
+
+.navbar a.nav-link:hover {
+    color: #333;
+    border-bottom: 3px solid #333; /* ホバー時の下線も少し太く */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.8rem; /* paddingも少し調整 */
+    padding-left: 1.8rem;
+}
+
+/* ----------- footer ----------------------- */
+
+footer .container {
+    border-top: 3px solid rgba(144, 130, 109, 0.2); /* 上線も少し太く */
+    color: #999;
+    padding: 25px 0px;
+    font-size: 12px; /* フッターの文字サイズも少し大きく */
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* ----------- ABOUT IMAGE SIZE ADJUSTMENT ----------- */
+
+#about .col-sm.col-md-auto img#my-image {
+    max-width: 250px; /* 画像もさらに少し大きく */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 35px; /* テキストとの間隔も調整 */
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* 小さな画面サイズでの調整 */
+@media (max-width: 767px) {
+    #about .col-sm.col-md-auto img#my-image {
+        max-width: 170px; /* 小さい画面でも少し大きく */
+        margin-right: 25px;
+        margin-bottom: 18px;
+    }
+}
+
+/* ----------- PR SECTION STYLE ----------- */
+
+#PR {
+    background-color: #f8f9fa;
+    padding: 35px 25px;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+#PR h2 {
+    border-bottom: 4px solid #007bff; /* 下線をさらに強調 */
+    color: #007bff;
+    font-size: 24px; /* 見出しをさらに大きく */
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#PR p {
+    line-height: 2.0; /* 行間をさらに広げる */
+    margin-bottom: 20px;
+    font-size: 1.1em; /* 段落の文字サイズも少し大きく */
+}
+
+/* 必要に応じてキーワードを強調するスタイル */
+#PR strong {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em; /* 強調部分も少し大きく */
+}
+
+#PR em {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 1.0em;
+}
+
+/* 小さな画面サイズでの調整 */
+@media (max-width: 767px) {
+    #PR {
+        padding: 25px 20px;
+    }
+
+    #PR h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #PR p {
+        line-height: 1.8;
+        margin-bottom: 15px;
+        font-size: 1.0em;
+    }
+
+    #PR strong {
+        font-size: 1.0em;
+    }
+}
