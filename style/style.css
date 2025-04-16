@@ -176,3 +176,20 @@ footer .container {
         font-size: 1.0em;
     }
 }
+.badge-container {
+  display: flex;
+  flex-wrap: wrap; /* バッジが複数行になるように設定 */
+  line-height: 2.5em; /* 行の高さを調整 */
+}
+
+.badge-cstm {
+  margin-right: 5px; /* バッジ間の余白 */
+  margin-bottom: 5px; /* バッジ間の余白（縦並びの場合） */
+}
+
+@media (max-width: 768px) { /* 画面幅が768px以下の場合 */
+  .badge-container {
+    flex-direction: column; /* バッジを縦並びにする */
+    line-height: 1.5em; /* 行の高さを調整 */
+  }
+}
